@@ -22,7 +22,6 @@
 - json-link: https://jacintodesign.github.io/quotes-api/data/quotes.json;
 
 # Cosas Faltantes
--Poder anadir al carrito de compras productos desde la seccion de products
 -Poder eliminar de uno en uno la cantidad de productos si tienes mas de dos
 -Agregar alertas a la hora agregar un producto al carrito de compras
 -Verificar el mail en la seccion de "Newsletter"

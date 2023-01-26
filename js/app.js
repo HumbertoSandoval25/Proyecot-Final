@@ -2,6 +2,7 @@
 const cartContainer = document.getElementById('cart-container');
 const featured = document.getElementById('featured__container');
 const newContainer = document.querySelector('.new__container');
+const productContainer = document.querySelector('#products-container');
 
 let articulosCarrito = [];
 
@@ -9,6 +10,8 @@ let articulosCarrito = [];
 const cargarEventListeners = () => {
     featured.addEventListener('click', agregarProducto)
     newContainer.addEventListener('click',agregarProducto);
+    productContainer.addEventListener('click',agregarProducto);
+
 
     //Elimina productos del carrito
     cartContainer.addEventListener('click', eliminarProducto);
@@ -167,3 +170,5 @@ async function getQuotes() {
 }
 
 getQuotes();
+
+

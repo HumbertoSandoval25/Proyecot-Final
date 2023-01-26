@@ -126,6 +126,8 @@ const limpiarHTML = () => {
     }
 }
 
+// Muestra las cantidades y Precios Totales del Carrito de compras
+
 const totalesCarrito = (articulosCarrito) => {
     const totalCantidad = articulosCarrito.reduce((acc, item) => acc + item.cantidad, 0);
     const totalCompra = articulosCarrito.reduce((acc,item) => acc + (Number(item.precio) * item.cantidad),0);
@@ -142,6 +144,8 @@ const totalCarrito = (cantidadTotal, precioTotal) => {
     cantidad.textContent = `Total Items: ${cantidadTotal}`;
     precio.textContent = `$${precioTotal}`
 };
+
+// Guardando y Obteniendo el carrito del LocalStorage
 
 const guardarProducto = (articulosCarrito) => {
     localStorage.setItem('productos', JSON.stringify(articulosCarrito))

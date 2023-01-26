@@ -10,7 +10,7 @@
 
 -Tiene para cambiar el tema de light a dark y el tema se guarda en localStorage
 -Tiene un navegador responsive que usa javascript para hacer distintos efectos css
--Puedes anadir articulos al carrito de compras solamente de la seccion de "Featured" y "New Arrivals" falto de la seccion de "Products" pero es el mismo concepto pero por falta de tiempo falto esa parte.
+-Puedes anadir articulos al carrito de compras 
 -Puedes eliminar los productos del carrito
 -Puedes anadir mas de dos productos al carrito.
 -Todo queda guardado en el LocalStorafe
@@ -22,7 +22,6 @@
 - json-link: https://jacintodesign.github.io/quotes-api/data/quotes.json;
 
 # Cosas Faltantes
--Poder eliminar de uno en uno la cantidad de productos si tienes mas de dos
 -Agregar alertas a la hora agregar un producto al carrito de compras
 -Verificar el mail en la seccion de "Newsletter"
 

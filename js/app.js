@@ -75,8 +75,11 @@ const leerDatosProducto = (producto) => {
     // console.log(articulosCarrito);
 
     carritoHTML();
-
+    
+   
+    
     guardarProducto(articulosCarrito);
+
     
 }
 
@@ -113,6 +116,8 @@ const carritoHTML = () => {
         cartContainer.appendChild(article);
     });
 
+    totalesCarrito(articulosCarrito);
+
 }
 
 const limpiarHTML = () => {
@@ -120,6 +125,23 @@ const limpiarHTML = () => {
         cartContainer.removeChild(cartContainer.firstChild);
     }
 }
+
+const totalesCarrito = (articulosCarrito) => {
+    const totalCantidad = articulosCarrito.reduce((acc, item) => acc + item.cantidad, 0);
+    const totalCompra = articulosCarrito.reduce((acc,item) => acc + (Number(item.precio) * item.cantidad),0);
+
+    totalCarrito(totalCantidad,totalCompra);
+    
+};
+
+const totalCarrito = (cantidadTotal, precioTotal) => {
+    const cantidad = document.querySelector('.cart__prices-item');
+    const precio = document.querySelector('.cart__prices-total');
+
+
+    cantidad.textContent = `Total Items: ${cantidadTotal}`;
+    precio.textContent = `$${precioTotal}`
+};
 
 const guardarProducto = (articulosCarrito) => {
     localStorage.setItem('productos', JSON.stringify(articulosCarrito))
@@ -138,8 +160,6 @@ const obtenerProductos = () => {
 }
 
 obtenerProductos();
-
-
 cargarEventListeners();
 
 

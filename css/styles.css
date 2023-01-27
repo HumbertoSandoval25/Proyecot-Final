@@ -218,6 +218,16 @@ body.dark-theme{
     font-size: 1.25rem;
     cursor: pointer;
 }
+.nav__shop{
+    position: relative;
+}
+.numberProducts{
+    position: absolute;
+    font-size: .7rem;
+    top: -.4rem;
+    right: .350rem;
+    font-weight: 700;
+}
 
 @media (max-width: 767px){
     .nav__menu{

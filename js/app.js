@@ -24,6 +24,7 @@ const agregarProducto = (e) => {
         const productoSeleccionado = e.target.parentElement;
         leerDatosProducto(productoSeleccionado);
 
+        // Libreria Sweet Alert
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -144,6 +145,9 @@ const totalesCarrito = (articulosCarrito) => {
     const totalCompra = articulosCarrito.reduce((acc,item) => acc + (Number(item.precio) * item.cantidad),0);
 
     totalCarrito(totalCantidad,totalCompra);
+
+    //Cambiando el numero de productos del carrito visible para el usuario
+    document.querySelector('.numberProducts').textContent = totalCantidad;
     
 };
 

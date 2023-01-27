@@ -23,6 +23,16 @@ const agregarProducto = (e) => {
     if(e.target.classList.contains('button')){
         const productoSeleccionado = e.target.parentElement;
         leerDatosProducto(productoSeleccionado);
+
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'You add an Item',
+            showConfirmButton: false,
+            timer: 1500,
+            width:'25em',
+            iconColor:"hsl(31,100%,70%)"
+          })
     }
 
 }
@@ -37,6 +47,7 @@ const eliminarProducto = (e) => {
 
         carritoHTML();
     }
+    totalesCarrito(articulosCarrito);
     guardarProducto(articulosCarrito);
 };
 

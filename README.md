@@ -15,6 +15,7 @@
 -Puedes anadir mas de dos productos al carrito.
 -Todo queda guardado en el LocalStorafe
 -Tiene un boton de scroll up en la parte inferior derecha para subir hasta la parte de arriba de la pagina
+-Tiene alertas a la hora agregar un producto al carrito de compras por SweetAlert2
 
 -Toda la pagina es responsive design
 # API
@@ -22,7 +23,7 @@
 - json-link: https://jacintodesign.github.io/quotes-api/data/quotes.json;
 
 # Cosas Faltantes
--Agregar alertas a la hora agregar un producto al carrito de compras
+
 -Verificar el mail en la seccion de "Newsletter"
 
 # Nota

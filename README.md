@@ -23,7 +23,6 @@
 - json-link: https://jacintodesign.github.io/quotes-api/data/quotes.json;
 
 # Cosas Faltantes
-
 -Verificar el mail en la seccion de "Newsletter"
 
 # Nota

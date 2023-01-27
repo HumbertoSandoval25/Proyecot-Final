@@ -32,7 +32,9 @@ const agregarProducto = (e) => {
             showConfirmButton: false,
             timer: 1500,
             width:'25em',
-            iconColor:"hsl(31,100%,70%)"
+            iconColor:"#fff",
+            background: "hsl(31,100%,70%)",
+            color:'#fff'
           })
     }
 

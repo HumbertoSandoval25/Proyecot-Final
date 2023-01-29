@@ -16,16 +16,13 @@
 -Todo queda guardado en el LocalStorafe
 -Tiene un boton de scroll up en la parte inferior derecha para subir hasta la parte de arriba de la pagina
 -Tiene alertas a la hora agregar un producto al carrito de compras por SweetAlert2
+-Esta validado el mail en la seccion de "Newsletter"
 
 -Toda la pagina es responsive design
 # API
 - En la seccion de 'Our Story' el parrafo contiene una API con frase al azar de personas famosas.
 - json-link: https://jacintodesign.github.io/quotes-api/data/quotes.json;
 
-# Cosas Faltantes
--Verificar el mail en la seccion de "Newsletter"
 
-# Nota
-Le agrege la seccion de cosas faltantes ya que son cosas que le voy a agregar pero por el tiempo de la entrega no me dio tiempo, pero espero que con todo lo que ya tiene sea suficiente para pasar el proyecto final.
 
 -Gracias por todo.

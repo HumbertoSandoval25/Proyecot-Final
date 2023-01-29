@@ -213,3 +213,56 @@ async function getQuotes() {
 getQuotes();
 
 
+/* ========= VALIDAR EMAIL ========= */
+//Seleccionar el input
+const emailInput = document.getElementById('email');
+const btnFormulario = document.querySelector('.newsletter__subscribe button[type="submit"]');
+const formulario = document.querySelector('.newsletter__subscribe');
+//Asignar evento
+emailInput.addEventListener('blur', validar);
+
+function validar(e){
+    if(e.target.value.trim() === ""){
+        mostrarAlerta('error','Oopps..','You didnt write anything');
+        return;
+    }
+
+    if(!validarEmail(e.target.value)){
+        mostrarAlerta('error','Oopps..','The email is Wrong');
+        return;
+    }
+    //Comprobar el objeto emial
+    comprobarEmail();
+    
+}
+
+btnFormulario.addEventListener('click', (e) => {
+    e.preventDefault()
+    //Mostrar alerta al mandar el correo
+    mostrarAlerta('success','Congratulations','We will send you our NewsLetter')
+    //Resetear el Formulario
+    formulario.reset();
+});
+
+function mostrarAlerta(icon,title,text){
+    //Generar alerta en HTML
+    Swal.fire({
+        icon: icon,
+        title: title,
+        text: text
+      })
+
+}
+
+function validarEmail(email){
+    //Expresion regular
+    const regex =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/ 
+    const resultado = regex.test(email);
+    return resultado;
+};
+
+function comprobarEmail(){
+      btnFormulario.disabled = false;
+      btnFormulario.classList.remove('button-form');  
+
+}

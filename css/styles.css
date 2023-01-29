@@ -671,6 +671,14 @@ body.dark-theme{
     padding: 1.25rem 1rem;
     color: hsl(0, 0%, 15%);
 }
+.button-form{
+    opacity: .5;
+    cursor: auto;
+}
+.alert{
+    background-color: red;
+    padding: 1rem;
+}
 /* ========= FOOTER ========= */
 .footer__container{
     row-gap: 2rem;

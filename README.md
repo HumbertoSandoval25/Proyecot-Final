@@ -20,7 +20,7 @@
 
 -Toda la pagina es responsive design
 # API
-- En la seccion de 'Our Story' el parrafo contiene una API con frase al azar de personas famosas.
+- En la seccion de 'Our Story' el parrafo contiene una API con frase al azar de personas famosas. Recarga la pagina y cambia la frase
 - json-link: https://jacintodesign.github.io/quotes-api/data/quotes.json;
 
 

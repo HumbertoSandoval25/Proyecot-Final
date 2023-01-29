@@ -233,16 +233,18 @@ function validar(e){
     }
     //Comprobar el objeto emial
     comprobarEmail();
-    
-}
 
-btnFormulario.addEventListener('click', (e) => {
+    btnFormulario.addEventListener('click', (e) => {
     e.preventDefault()
     //Mostrar alerta al mandar el correo
     mostrarAlerta('success','Congratulations','We will send you our NewsLetter')
     //Resetear el Formulario
     formulario.reset();
 });
+    
+}
+
+
 
 function mostrarAlerta(icon,title,text){
     //Generar alerta en HTML
